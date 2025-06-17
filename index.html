@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lorenzo and Marzia Ministry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --main-bg: #fdfdfd;
+            --text-color: #333;
+            --soft-bg: #f4f4f4;
+
+            --color-lorenzo: #18487e;
+            /* Blu navy */
+            --color-marzia: #e9bfc4;
+            /* Rosa pastello */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        header {
+            background: var(--soft-bg);
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+
+        .hero-title .line {
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .hero-title .lorenzo {
+            color: var(--color-lorenzo);
+            font-weight: bold;
+        }
+
+        .hero-title .marzia {
+            color: var(--color-marzia);
+            font-weight: bold;
+        }
+
+        .hero-title .ministry {
+            font-size: 0.95em;
+            letter-spacing: 2px;
+        }
+
+
+        .hero-image {
+            max-width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 60px;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .bio-section {
+            margin-bottom: 60px;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .bio-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 0.3em;
+        }
+
+        .bio-section.lorenzo span {
+            color: var(--color-lorenzo);
+            font-weight: bold;
+        }
+
+        .bio-section.marzia span {
+            color: var(--color-marzia);
+            font-weight: bold;
+        }
+
+        .bio-section p {
+            font-size: 1.05em;
+        }
+
+        footer {
+            background-color: var(--soft-bg);
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+
+        /* Animazioni */
+        .animate-title {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        .animate-image {
+            animation: zoomIn 1s ease-out forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        .animate-intro {
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        .animate-lorenzo {
+            animation: slideInLeft 1s ease-out forwards;
+            animation-delay: 0.7s;
+            opacity: 0;
+        }
+
+        .animate-marzia {
+            animation: slideInRight 1s ease-out forwards;
+            animation-delay: 0.9s;
+            opacity: 0;
+        }
+
+        .animate-footer {
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 1.1s;
+            opacity: 0;
+        }
+
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="hero-title animate-title">
+            <h1 class="hero-title">
+                <span class="line">
+                    <span class="lorenzo">Lorenzo</span> and <span class="marzia">Marzia</span>
+                </span><br>
+                <span class="line ministry">Ministry</span>
+            </h1>
+
+        </h1>
+        <img class="hero-image" src="./imgs/foto-coppia.jpeg" alt="Lorenzo e Marzia">
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>“Lorenzo and Marzia ministry” nasce nel 2020 circa come risposta di Dio al grido di disperazione di
+                questa generazione che non vuole farsi vincere dal male.
+            </p>
+        </div>
+
+        <div class="bio-section lorenzo">
+            <p> <span class="him-text">Lorenzo Montanaro</span> ha iniziato il suo percorso di fede cristiana nel 2007,
+                mentre prestava servizio come
+                volontario nell’esercito italiano. In un incontro sovrannaturale “cambia vita”, per le strade di
+                Bologna, attraverso la testimonianza di alcuni adolescenti, il Signore sì è rivelato potentemente al suo
+                cuore.Poco dopo infatti parte per la Norvegia per un’esperienza di scuola biblica nei “Jesus Revolution”
+                durata circa un anno , al termine ,rientra in Italia e comincia una chiamata evangelistica come Pastore
+                dei giovani presso una chiesa di Bari . Esperienza che lo terrà impegnato con dedizione e amore per il
+                Vangelo per circa 5 anni dove sarà testimone di centinaia di vite trasformate e dopo, Lorenzo si
+                ritroverà a fondare quattro comunità sul territorio italiano. Ma…dopo un po’ , Lorenzo realizza che la
+                sua vita non era come si aspettava e si ritrova a smarrire completamente se stesso e la via intrapresa
+                con tanto zelo anni prima.
+                Ma ,Dio non aveva finito con lui….e cresce dentro di sé un grido di disperazione ,un bisogno di
+                cominciare a vivere secondo i principii biblici per riscattare la sua vita e quella dei sinceri che
+                erano rimasti aggrappati solo a Dio e al suo fianco , e che così come lui , non avevano compromesso il
+                loro cuore al male!Desidera quindi tornare radicalmente a Dio,come mai prima,ma aveva perso
+                apparentemente tutto ed era diventato preda e bersaglio di tanti!
+                Ed è proprio in risposta a questo grido di disperazione che la grazia del Signore lo ha raggiunto
+                proprio attraverso degli uomini di Dio che hanno ascoltato la voce del Signore , dei fratelli sinceri e
+                sua moglie Marzia ,che lo ha accolto con se’ e sostenuto proprio nel momento più buio della sua vita
+                ,quando non aveva più nulla da offrire ,addossandosi insieme a lui ogni peso ed ogni attacco,resistendo
+                al suo fianco e in tutto il suo processo continuo di redenzione interiore per assomigliare davvero al
+                cuore di Gesù sino ad oggi.
+            </p>
+        </div>
+
+        <div class="bio-section marzia">
+            <p>Sua moglie <span class="marzia">Marzia Vergari</span> ,convertita nel 2012 attraverso un’esperienza
+                travolgente con il
+                Signore Gesù
+                ed in seguito alla guarigione sovrannaturale di suo figlio,decide di vivere al servizio di Dio e degli
+                altri,infatti da lei la sua famiglia e decine e decine di famiglie si convertono e avvicinano alla fede
+                come mai prima mentre lei serve Dio con umiltà nella comunità locale con integrità e dedizione, aiutando
+                sempre “gli ultimi” e portando frutto inizialmente con i bambini nella Scuola Domenicale, con le donne
+                ,e oggi ancora con la lode ,fondando il gruppo Gospel “Liberi per davvero Band” e incidendo il primo
+                brano/testimonianza “Senza di te” ,mantenendo come unico scopo ancora e sempre ,la salvezza delle anime!
+                Uniti ,non si sono lasciati abbattere e sono stati sostenuti spiritualmente da tanti , primi su tutti
+                l'apostolo Americano John Cava ,i loro familiari, gli anziani di chiesa tra cui il profeta Aldo Bellezza
+                e tanti fratelli maturi nella fede.
+                Sono stati riconosciuti pubblicamente e la presenza di Dio e la sua mano e’ sempre stata tangibile su di
+                loro e attraverso di loro.
+                Dal Gennaio 2023 , insieme , hanno fondato il Centro Cristiano Liberi per Davvero Church (e Scuola
+                Biblica annessa) con sede legale in provincia di Bari e con gruppi sparsi in tutta Italia ed all’estero.
+                Oggi in sede, online e fuori sede , fianco a fianco si dedicano principalmente al discepolato e alla
+                formazione di una nuova generazione di uomini e donne di Dio. Proprio il passato negativo del ministro
+                Lorenzo infatti, unito al suo bisogno di piacere solo al Signore Gesù , insieme alla perseveranza nella
+                giustizia di Dio e integrità del ministro Marzia ,e’ stato il connubio per essere ancor di più
+                riferimento per molti e fonte di insegnamento per aiutare gli altri attraverso esperienze radicali ,
+                testimonianze di fede e miracoli ,con al centro la Parola di Dio ,a non perdere il cuore e splendere
+                anche nelle tenebre più buie.</p>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
